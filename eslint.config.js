@@ -20,6 +20,10 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+    "extends": ["react-app", "eslint:recommended", "prettier"],
+  "rules": {
+    "semi": ["error", "never"]
+  },
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,

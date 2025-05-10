@@ -55,6 +55,7 @@ Commitlint will validate the commit message format.
 If any of these fail, the commit is blocked until resolved.
 
 ✍️ Commit Message Examples (Valid)
+
 feat: Add login page
 
 fix: Resolve crash when submitting form

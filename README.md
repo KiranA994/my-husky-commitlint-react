@@ -55,13 +55,13 @@ Commitlint will validate the commit message format.
 If any of these fail, the commit is blocked until resolved.
 
 ✍️ Commit Message Examples (Valid)
-feat: add login page
+feat: Add login page
 
-fix: resolve crash when submitting form
+fix: Resolve crash when submitting form
 
-chore: update dependencies
+chore: Update dependencies
 
-refactor: clean up sidebar code
+refactor: Clean up sidebar code
 
 ❌ Invalid Messages Examples
 added new feature

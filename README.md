@@ -1,12 +1,61 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📌 Tools Overview
+ESLint: Linting tool to identify and fix problems in JavaScript/TypeScript code.
 
-Currently, two official plugins are available:
+Prettier: Formatter to enforce consistent code style.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Husky: Git hooks manager to run scripts at different stages (e.g., before commit).
 
-## Expanding the ESLint configuration
+Lint-Staged: Runs linters only on staged files.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Commitlint: Validates commit messages against conventional commit rules.
+
+✅ Steps to Set Up
+1. Install Required Development Dependencies
+Install Husky, Lint-Staged, ESLint, Prettier, and Commitlint packages in your React project.
+
+2. Configure ESLint
+Create an ESLint configuration file (.eslintrc.json) that extends standard React and Prettier settings. Customize the rules to suit your project needs.
+
+3. Configure Prettier
+Set up a .prettierrc configuration file to define formatting rules such as quotes, semicolons, and trailing commas.
+
+4. Initialize Husky
+Enable Husky in your Git repository. This allows you to set up hooks that run before commits.
+
+5. Configure Lint-Staged
+Add Lint-Staged configuration to your package.json to run ESLint and Prettier only on staged files during pre-commit.
+
+6. Create Git Hooks with Husky
+Set up a pre-commit hook to run Lint-Staged and a commit-msg hook to validate commit messages using Commitlint.
+
+7. Set Up Commitlint
+Create a configuration file (commitlint.config.js) to enforce Conventional Commit standards like feat:, fix:, chore:, etc.
+
+🧪 How It Works
+When you stage files and attempt to commit:
+
+ESLint and Prettier will check and optionally fix issues.
+
+Commitlint will validate the commit message format.
+
+If any of these fail, the commit is blocked until resolved.
+
+✍️ Commit Message Examples (Valid)
+feat: add login page
+
+fix: resolve crash when submitting form
+
+chore: update dependencies
+
+refactor: clean up sidebar code
+
+❌ Invalid Messages Examples
+added new feature
+
+bug fix
+
+update stuff
+
+These will be rejected by Commitlint due to incorrect formatting.

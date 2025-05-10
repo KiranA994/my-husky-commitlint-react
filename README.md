@@ -31,7 +31,19 @@ Add Lint-Staged configuration to your package.json to run ESLint and Prettier on
 Set up a pre-commit hook to run Lint-Staged and a commit-msg hook to validate commit messages using Commitlint.
 
 7. Set Up Commitlint
-Create a configuration file (commitlint.config.js) to enforce Conventional Commit standards like feat:, fix:, chore:, etc.
+Create a configuration file (commitlint.config.js) to enforce Conventional Commit standards like
+
+- build
+- chore
+- ci
+- docs
+- feat
+- fix
+- perf
+- refactor
+- revert
+- style
+- test
 
 🧪 How It Works
 When you stage files and attempt to commit:
